@@ -20,4 +20,6 @@ Elk Stack Deployment Diagram, displays a tested and used live ELK environment on
 
 The overall purpose of this network is to expose a load-balanced and monitored instance of DVWA; an application where penertration testers and security professionals can test their skills and tools.
 
-A Load Balancer ensures traffic is distributed across a number of servers to maintian a balanced flow within the network. In this case it's an Appliction Load Balancer, which distributes network traffic directly to users. Restricting heavy traffic from slowing or crashing your network server.
+A Load Balancer ensures traffic is distributed across a number of servers to maintian a balanced flow within the network. In this case it's an Appliction Load Balancer, which distributes network traffic directly to users. Restricting heavy traffic from slowing or crashing the network, "DDoS Attack". The benifit of a Jumpbox provides security, backups and broad customizations acting such as the heart of the system.
+
+Integrating an Elasticsearch, Logstash, & Kibana, (ELK) allows users to monitor the vulnerable virtual machines for changes to the data's logs, and events. System's applications, infrastructures, clickstreams, performance etc.
