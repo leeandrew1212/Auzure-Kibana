@@ -1,2 +1,2 @@
 #  Project Auzure
-Cloud Security & Virtual Machines.
+Elk Stack Deployment, Cloud Security & Virtual Machines information and deployment.
