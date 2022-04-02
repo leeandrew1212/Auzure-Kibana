@@ -32,3 +32,6 @@ Integrating an Elasticsearch, Logstash, & Kibana, (ELK) allows users to monitor 
 | Web-1              | AVS Virtual Machine | 10.0.0.5   | Linux            |
 | Web-2              | AVS Virtual Machine | 10.0.0.6   | Linux            |
 | ELK-Server         | Gateway             | 10.1.0.4   | Linux            |
+
+## Access Policies
+
