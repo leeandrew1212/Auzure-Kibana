@@ -16,3 +16,6 @@ Elk Stack Deployment Diagram, displays a tested and used live ELK environment on
      - Beats in Use
      - Machines Being Monitored
   - How to use the Ansible Build
+## Topology Description
+
+The overall purpose of this network is to expose a load-balanced and monitored instance of DVWA; an application where penertration testers and security professionals can test their skills and tools.
