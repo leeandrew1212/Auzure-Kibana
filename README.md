@@ -19,3 +19,5 @@ Elk Stack Deployment Diagram, displays a tested and used live ELK environment on
 ## Topology Description
 
 The overall purpose of this network is to expose a load-balanced and monitored instance of DVWA; an application where penertration testers and security professionals can test their skills and tools.
+
+A Load Balancer ensures traffic is distributed across a number of servers to maintian a balanced flow within the network. In this case it's an Appliction Load Balancer, which distributes network traffic directly to users. Restricting heavy traffic from slowing or crashing your network server.
