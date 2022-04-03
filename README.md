@@ -92,14 +92,14 @@ In order to use the playbook, you will need to have an Ansible control node alre
  
  Create a playbook.yml for Filebeat and Metricbeat, copy it to the `/etc/ansible` directory. Next update the "hosts" file within the ansible directory to install the playbook on the wanted machine's by listing their IP address within [webservers]. To specify which machine to install the Elk server on versus which to install Filebeat on, you must label the config file name above the targeted IP address you want to install the software on. A display can be seen below.
 
-# Ex 2: A collection of hosts belonging to the 'webservers' group
+#### Ex 2: A collection of hosts belonging to the 'webservers' group
 
-[webservers]
-10.0.0.5 ansible_python_interpreter=/usr/bin/python3
-10.0.0.6 ansible_python_interpreter=/usr/bin/python3
-[elk]
-10.1.0.4 ansible_python_interpreter=/usr/bin/python3
+- [webservers]
+ - 10.0.0.5 ansible_python_interpreter=/usr/bin/python3
+ - 10.0.0.6 ansible_python_interpreter=/usr/bin/python3
+- [elk]
+ - 10.1.0.4 ansible_python_interpreter=/usr/bin/python3
 
-Last of all to check finalization of a successful ELK environment you must navigate to Kibana's website with your ELK's Public IP listed here, http://[ELK Public IP]/app/kibana displaying a similar image below.
+Last of all to check finalization of a successful ELK environment you must navigate to Kibana's website with your ELK's Public IP listed here, "http://[ELK Public IP]/app/kibana", displaying a similar image below.
 
 <img width="960" alt="Kibana" src="https://user-images.githubusercontent.com/102629156/161428451-20031420-59eb-4b00-b7c7-6dedbe6904cb.png">
