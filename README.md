@@ -24,7 +24,7 @@ A Load Balancer ensures traffic is distributed across a number of servers to mai
 
 Integrating an Elasticsearch, Logstash, & Kibana, (ELK) allows users to monitor the vulnerable virtual machines for changes to the data's logs, and events. System's applications, infrastructures, clickstreams, performance etc. A Filebeat for example gathers, parse, & augment the data. A Metricbeat records metrics along with statistics from the operating system and services running on the server.
 
- - The configuration details of each machine may be found below.
+ - The configuration details of each machine may be seen in the below table.
 
 | Name               | Function            | IP Address | Operating System |
 |--------------------|---------------------|------------|------------------|
@@ -41,5 +41,9 @@ Only the JumpBoxProvisioner can accept connections from the internet. Access to 
 
 Machines within the network can only be accessed by the ELK VM such as Web-1 (10.0.0.5) and Web-2 (10.0.0.6).
 
-[Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables)
+ - A brief summary of the access policies in place can be seen in the below table.
 
+| Name               | Publicly Accessible | Allowed IP Addresses  |
+|--------------------|---------------------|-----------------------|
+| JumpBoxProvisioner | Yes/No              | (10.0.0.5) (10.0.0.6) |
+| ELK-Server         | Yes/No              | (10.0.0.5) (10.0.0.6) |
