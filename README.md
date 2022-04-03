@@ -88,9 +88,9 @@ In order to use the playbook, you will need to have an Ansible control node alre
 ### SSH into the control node and follow the steps below:
  - Copy the downloaded Filebeat and Metricbeat Config to your `/etc/ansible` directory.
  - Update the Ansible Config to include the remote username for the playbook.
- - Run the playbook, and navigate to Kibana module status click check data to see if the installation was successful such as displayed data of your machines.
+ - Run the playbook and navigate to Kibana module status click check data to see if the installation was successful such as displayed data of your machines.
  
- Create a playbook.yml for Filebeat and Metricbeat, copy it to the `/etc/ansible` directory. Next update the "hosts" file within the ansible directory to install the playbook on the wanted machine's by listing their IP adddres within [webservers]. To specify which machine to install the Elk server on versus which to install Filebeat on, you must lable the config file name above the targeted IP address you want to install the software on. A display can be seen below.
+ Create a playbook.yml for Filebeat and Metricbeat, copy it to the `/etc/ansible` directory. Next update the "hosts" file within the ansible directory to install the playbook on the wanted machine's by listing their IP address within [webservers]. To specify which machine to install the Elk server on versus which to install Filebeat on, you must label the config file name above the targeted IP address you want to install the software on. A display can be seen below.
 
 # Ex 2: A collection of hosts belonging to the 'webservers' group
 
@@ -100,4 +100,6 @@ In order to use the playbook, you will need to have an Ansible control node alre
 [elk]
 10.1.0.4 ansible_python_interpreter=/usr/bin/python3
 
-Last of all to check finalization of a succeseful ELK enviornmet you must navigate to Kibana's website with your ELK's Public IP listed here, http://[ELK Public IP]/app/kibana.
+Last of all to check finalization of a successful ELK environment you must navigate to Kibana's website with your ELK's Public IP listed here, http://[ELK Public IP]/app/kibana displaying a similar image below.
+
+<img width="960" alt="Kibana" src="https://user-images.githubusercontent.com/102629156/161428451-20031420-59eb-4b00-b7c7-6dedbe6904cb.png">
