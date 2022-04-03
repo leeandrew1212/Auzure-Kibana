@@ -67,3 +67,16 @@ Ansible was used to automate configuration of the ELK virtual machine found in [
 
 This ELK server is configured to monitor Web-1 (10.0.0.5) and Web-2 (10.0.0.6). We have installed the following Beats on these machines; Filebeat, and Metricbeat.
 
+### These Beats allow us to collect the following information from each machine.
+
+#### Filebeat
+
+Filebeat collects a variety of information such as logs, the amount of clicks, and host changes. A breif pictiured display can be seen below.
+
+<img width="960" alt="Filebeat Dashboard" src="https://user-images.githubusercontent.com/102629156/161424179-6a716a56-29df-4856-ae8a-d3732402e3a6.png">
+
+#### Metricbeat
+
+Metricbeat provides vivid information on a broad level of things such as user usage, global traffic, high and low load traffic. A detailed image can be seen below.
+
+<img width="960" alt="Metrics Web-1" src="https://user-images.githubusercontent.com/102629156/161424713-b516204f-f024-42b8-9ee9-44935b2d4c27.png">
