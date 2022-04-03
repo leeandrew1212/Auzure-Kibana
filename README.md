@@ -5,10 +5,13 @@ ELK Stack Deployment, Cloud Security & Virtual Machines information and deployme
 ##  Cloud Security & Virtual Machines Base Diagram
 ![Cloud Security drawio](https://user-images.githubusercontent.com/102629156/161367105-da6f89e1-e92e-41ee-9bed-496b6728a247.png)
 
-Elk Stack Deployment Diagram, displays a tested and used live ELK environment on Azure. The Cloud Security & Virtual Machines Base Diagram, displays a more detailed example of a base deployment environment without the configuration of Elk Stack seen in the above digram.  
- Select portions of the ELK Stack Diagram, such as the ELK virtual machine may be used to install only certain pieces of it, for example, "Filebeat" launched within the etc/ansible file. The playbook can be found in the CyberSec(Ansible) guidlines below.
+Elk Stack Deployment Diagram, displays a tested and used live ELK environment on Azure. The Cloud Security & Virtual Machines Base Diagram, displays a more detailed example of a base deployment environment without the configuration of 
+Elk Stack seen in the above digram.  
+
+Select portions of the ELK Stack Diagram, such as the ELK virtual machine may be used to install only certain pieces of it, for example, "Filebeat" launched within the etc/ansible file. The playbook can be found in the CyberSec(Ansible) guidlines below.
+
 ##  Ansible Configuration Files 
-[CyberSec guidlines for this project](Ansible)
+[Ansible Files](Ansible)
 ### Filebeat Ansible File
   - Contains the Description of the Topology
   - Access Policies
@@ -47,3 +50,7 @@ Machines within the network can only be accessed by the ELK VM such as Web-1 (10
 |--------------------|---------------------|-----------------------|
 | JumpBoxProvisioner | Yes/No              | (10.0.0.5) (10.0.0.6) |
 | ELK-Server         | Yes/No              | (10.0.0.5) (10.0.0.6) |
+
+## Elk Configuration
+
+Ansible was used to automate configuration of the ELK virtual machine found in [Ansible Files](Ansible). No configuration was performed manually, as ansible can install an updated version of a specific type of software on all listed IP address within that file at once cutting time and error in half.
