@@ -51,15 +51,19 @@ Machines within the network can only be accessed by the ELK VM such as Web-1 (10
 | JumpBoxProvisioner | Yes/No              | (10.0.0.5) (10.0.0.6) |
 | ELK-Server         | Yes/No              | (10.0.0.5) (10.0.0.6) |
 
-## Elk Configuration
+## ELK Configuration
 
 Ansible was used to automate configuration of the ELK virtual machine found in [Ansible Files](Ansible). No configuration was performed manually, as ansible can install an updated version of a specific type of software on all listed IP address within that file at once cutting time and error in half.
 
-### The Elk Ansible File Playbook implements the following tasks:
+### The ELK Ansible File Playbook implements the following tasks:
 
 <img width="451" alt="GTELK yml" src="https://user-images.githubusercontent.com/102629156/161421579-6807a561-6900-492e-bf8d-b69d8ceb3237.png">
 
 ### The screenshot below displays the result of running `docker ps` after successfully configuring the Elk instance.
 
 <img width="451" alt="Elk Docker" src="https://user-images.githubusercontent.com/102629156/161421946-88793e17-113e-41b8-a702-cca686b06143.png">
+
+## Target Machines & Beats
+
+This ELK server is configured to monitor Web-1 (10.0.0.5) and Web-2 (10.0.0.6). We have installed the following Beats on these machines; Filebeat, and Metricbeat.
 
