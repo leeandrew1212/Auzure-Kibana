@@ -35,3 +35,11 @@ Integrating an Elasticsearch, Logstash, & Kibana, (ELK) allows users to monitor 
 
 ## Access Policies
 
+The machines on the internal network are not exposed to the public Internet.
+
+Only the JumpBoxProvisioner can accept connections from the internet. Access to this machine is only allowed from the following IP addresses, 10.0.0.5 and 10.0.0.6.
+
+Machines within the network can only be accessed by the ELK VM such as Web-1 (10.0.0.5) and Web-2 (10.0.0.6).
+
+[Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables)
+
