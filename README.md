@@ -59,7 +59,7 @@ Ansible was used to automate configuration of the ELK virtual machine found in [
 
 <img width="451" alt="GTELK yml" src="https://user-images.githubusercontent.com/102629156/161421579-6807a561-6900-492e-bf8d-b69d8ceb3237.png">
 
-### The screenshot below displays the result of running `docker ps` after successfully configuring the Elk instance.
+### The screenshot below displays the result of running `docker ps` after successfully configuring the Elk instance:
 
 <img width="451" alt="Elk Docker" src="https://user-images.githubusercontent.com/102629156/161421946-88793e17-113e-41b8-a702-cca686b06143.png">
 
@@ -67,11 +67,11 @@ Ansible was used to automate configuration of the ELK virtual machine found in [
 
 This ELK server is configured to monitor Web-1 (10.0.0.5) and Web-2 (10.0.0.6). We have installed the following Beats on these machines; Filebeat, and Metricbeat.
 
-### These Beats allow us to collect the following information from each machine.
+### These Beats allow us to collect the following information from each machine:
 
 #### Filebeat
 
-Filebeat collects a variety of information such as logs, the amount of clicks, and host changes. A breif pictiured display can be seen below.
+Filebeat collects a variety of information such as logs, the amount of clicks, and host changes. A brief pictured display can be seen below.
 
 <img width="960" alt="Filebeat Dashboard" src="https://user-images.githubusercontent.com/102629156/161424179-6a716a56-29df-4856-ae8a-d3732402e3a6.png">
 
@@ -80,3 +80,24 @@ Filebeat collects a variety of information such as logs, the amount of clicks, a
 Metricbeat provides vivid information on a broad level of things such as user usage, global traffic, high and low load traffic. A detailed image can be seen below.
 
 <img width="960" alt="Metrics Web-1" src="https://user-images.githubusercontent.com/102629156/161424713-b516204f-f024-42b8-9ee9-44935b2d4c27.png">
+
+## Using the Playbook
+
+In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned.
+
+### SSH into the control node and follow the steps below:
+ - Copy the downloaded Filebeat and Metricbeat Config to your `/etc/ansible` directory.
+ - Update the Ansible Config to include the remote username for the playbook.
+ - Run the playbook, and navigate to Kibana module status click check data to see if the installation was successful such as displayed data of your machines.
+ 
+ Create a playbook.yml for Filebeat and Metricbeat, copy it to the `/etc/ansible` directory. Next update the "hosts" file within the ansible directory to install the playbook on the wanted machine's by listing their IP adddres within [webservers]. To specify which machine to install the Elk server on versus which to install Filebeat on, you must lable the config file name above the targeted IP address you want to install the software on. A display can be seen below.
+
+# Ex 2: A collection of hosts belonging to the 'webservers' group
+
+[webservers]
+10.0.0.5 ansible_python_interpreter=/usr/bin/python3
+10.0.0.6 ansible_python_interpreter=/usr/bin/python3
+[elk]
+10.1.0.4 ansible_python_interpreter=/usr/bin/python3
+
+Last of all to check finalization of a succeseful ELK enviornmet you must navigate to Kibana's website with your ELK's Public IP listed here, http://[ELK Public IP]/app/kibana.
